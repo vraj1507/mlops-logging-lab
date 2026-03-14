@@ -1,0 +1,76 @@
+2026-03-14 10:59:01,247 - ml_pipeline - INFO - Logger initialized. Dual output: console + ml_pipeline.log
+2026-03-14 10:59:39,525 - ml_pipeline - INFO - Loading Iris dataset...
+2026-03-14 10:59:39,650 - ml_pipeline - INFO - Dataset loaded successfully. Shape: (150, 4)
+2026-03-14 10:59:39,652 - ml_pipeline - DEBUG - Feature names: ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
+2026-03-14 10:59:39,671 - ml_pipeline - DEBUG - Class distribution:
+{0: 50, 1: 50, 2: 50}
+2026-03-14 11:00:06,095 - ml_pipeline - INFO - Splitting data into train and test sets (80/20)...
+2026-03-14 11:00:06,476 - ml_pipeline - INFO - Train size: 120 samples | Test size: 30 samples
+2026-03-14 11:00:06,476 - ml_pipeline - DEBUG - Test set size is adequate: 30 samples
+2026-03-14 11:00:35,786 - ml_pipeline - INFO - Training RandomForestClassifier (n_estimators=100, max_depth=4)...
+2026-03-14 11:00:35,789 - ml_pipeline - DEBUG - Hyperparameters: n_estimators=100, max_depth=4, random_state=42
+2026-03-14 11:00:35,976 - ml_pipeline - INFO - Model training complete.
+2026-03-14 11:01:02,417 - ml_pipeline - INFO - Evaluating model on test set...
+2026-03-14 11:01:02,550 - ml_pipeline - INFO - Test Accuracy: 0.9667
+2026-03-14 11:01:02,551 - ml_pipeline - DEBUG - Classification Report:
+              precision    recall  f1-score   support
+
+      setosa       1.00      1.00      1.00        10
+  versicolor       1.00      0.90      0.95        10
+   virginica       0.91      1.00      0.95        10
+
+    accuracy                           0.97        30
+   macro avg       0.97      0.97      0.97        30
+weighted avg       0.97      0.97      0.97        30
+
+2026-03-14 11:01:02,551 - ml_pipeline - INFO - Accuracy is above the 90% threshold. Model performance is acceptable.
+2026-03-14 11:01:26,531 - ml_pipeline - DEBUG - Feature importances:
+2026-03-14 11:01:26,533 - ml_pipeline - DEBUG -   petal length (cm): 0.4377
+2026-03-14 11:01:26,533 - ml_pipeline - DEBUG -   petal width (cm): 0.4359
+2026-03-14 11:01:26,533 - ml_pipeline - DEBUG -   sepal length (cm): 0.1156
+2026-03-14 11:01:26,534 - ml_pipeline - DEBUG -   sepal width (cm): 0.0108
+2026-03-14 11:01:54,497 - ml_pipeline - INFO - Running prediction on new sample: [[5.1, 3.5, 1.4, 0.2]]
+2026-03-14 11:01:54,532 - ml_pipeline - INFO - Predicted class: setosa (index 0)
+2026-03-14 11:01:54,533 - ml_pipeline - DEBUG - Class probabilities: {np.str_('setosa'): np.float64(1.0), np.str_('versicolor'): np.float64(0.0), np.str_('virginica'): np.float64(0.0)}
+2026-03-14 11:01:54,535 - ml_pipeline - INFO - High confidence prediction: 1.00
+2026-03-14 11:03:33,540 - ml_pipeline - INFO - Running prediction on new sample: [[5.1, 3.5, 1.4, 0.2]]
+2026-03-14 11:03:33,611 - ml_pipeline - INFO - Predicted class: setosa (index 0)
+2026-03-14 11:03:33,615 - ml_pipeline - DEBUG - Class probabilities: {'setosa': 1.0, 'versicolor': 0.0, 'virginica': 0.0}
+2026-03-14 11:03:33,618 - ml_pipeline - INFO - High confidence prediction: 1.00
+2026-03-14 11:04:00,418 - ml_pipeline - INFO - Pipeline complete. Reading log file contents...
+2026-03-14 11:11:06,452 - ml_pipeline - INFO - Logger initialized. Dual output: console + ml_pipeline.log
+2026-03-14 11:11:06,456 - ml_pipeline - INFO - Loading Iris dataset...
+2026-03-14 11:11:06,462 - ml_pipeline - INFO - Dataset loaded successfully. Shape: (150, 4)
+2026-03-14 11:11:06,462 - ml_pipeline - DEBUG - Feature names: ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
+2026-03-14 11:11:06,464 - ml_pipeline - DEBUG - Class distribution:
+{0: 50, 1: 50, 2: 50}
+2026-03-14 11:11:06,470 - ml_pipeline - INFO - Splitting data into train and test sets (80/20)...
+2026-03-14 11:11:06,473 - ml_pipeline - INFO - Train size: 120 samples | Test size: 30 samples
+2026-03-14 11:11:06,474 - ml_pipeline - DEBUG - Test set size is adequate: 30 samples
+2026-03-14 11:11:06,478 - ml_pipeline - INFO - Training RandomForestClassifier (n_estimators=100, max_depth=4)...
+2026-03-14 11:11:06,479 - ml_pipeline - DEBUG - Hyperparameters: n_estimators=100, max_depth=4, random_state=42
+2026-03-14 11:11:06,587 - ml_pipeline - INFO - Model training complete.
+2026-03-14 11:11:06,590 - ml_pipeline - INFO - Evaluating model on test set...
+2026-03-14 11:11:06,600 - ml_pipeline - INFO - Test Accuracy: 0.9667
+2026-03-14 11:11:06,601 - ml_pipeline - DEBUG - Classification Report:
+              precision    recall  f1-score   support
+
+      setosa       1.00      1.00      1.00        10
+  versicolor       1.00      0.90      0.95        10
+   virginica       0.91      1.00      0.95        10
+
+    accuracy                           0.97        30
+   macro avg       0.97      0.97      0.97        30
+weighted avg       0.97      0.97      0.97        30
+
+2026-03-14 11:11:06,601 - ml_pipeline - INFO - Accuracy is above the 90% threshold. Model performance is acceptable.
+2026-03-14 11:11:06,612 - ml_pipeline - DEBUG - Feature importances:
+2026-03-14 11:11:06,613 - ml_pipeline - DEBUG -   petal length (cm): 0.4377
+2026-03-14 11:11:06,614 - ml_pipeline - DEBUG -   petal width (cm): 0.4359
+2026-03-14 11:11:06,617 - ml_pipeline - DEBUG -   sepal length (cm): 0.1156
+2026-03-14 11:11:06,619 - ml_pipeline - DEBUG -   sepal width (cm): 0.0108
+2026-03-14 11:11:06,633 - ml_pipeline - INFO - Running prediction on new sample: [[5.1, 3.5, 1.4, 0.2]]
+2026-03-14 11:11:06,648 - ml_pipeline - INFO - Predicted class: setosa (index 0)
+2026-03-14 11:11:06,649 - ml_pipeline - DEBUG - Class probabilities: {'setosa': 1.0, 'versicolor': 0.0, 'virginica': 0.0}
+2026-03-14 11:11:06,650 - ml_pipeline - INFO - High confidence prediction: 1.00
+2026-03-14 11:11:06,652 - ml_pipeline - INFO - Pipeline complete. Reading log file contents...
